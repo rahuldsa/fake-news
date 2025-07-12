@@ -27,8 +27,8 @@ This is a simple AI-powered web application that classifies news headlines as **
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/rahuldsa/fake-news-detector.git
-cd fake-news-detector
+git clone https://github.com/rahuldsa/fake-news.git
+cd fake-news
 
 Install dependencies:
 pip install -r requirements.txt
@@ -44,7 +44,7 @@ Or run the script:
 python app.py
 
 📁 Project Structure
-fake-news-detector/
+fake-news/
 │
 ├── app.py                # Main script to test news
 ├── news_checker.py       # Contains the check_news() function
