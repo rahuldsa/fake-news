@@ -1,0 +1,67 @@
+Edit
+# 📰 Fake News Detection App
+
+This is a simple AI-powered web application that classifies news headlines as **real** or **fake** using machine learning. Built using Python and trained on labeled data, the app helps identify misinformation and fake news from text input.
+
+## 🚀 Features
+
+- 🔍 Classifies news headlines or short articles as **Real** or **Fake**
+- 🤖 Uses `scikit-learn` and a **TF-IDF + PassiveAggressiveClassifier** pipeline
+- 🧠 Trained on a labeled dataset with thousands of news samples
+- 🖥️ Simple and interactive command-line interface (CLI)
+- 📝 Easy to extend with a web app using Streamlit or Flask
+
+---
+
+## 🧰 Tech Stack
+
+- Python 3.7+
+- Pandas
+- Scikit-learn
+- TfidfVectorizer
+- PassiveAggressiveClassifier
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**:
+```bash
+git clone https://github.com/rahuldsa/fake-news-detector.git
+cd fake-news-detector
+
+Install dependencies:
+pip install -r requirements.txt
+If requirements.txt is missing, install manually:
+pip install pandas scikit-learn
+
+🧪 Usage
+You can try the model with custom inputs directly in the Python script:
+from news_checker import check_news
+check_news("The world is ending tomorrow, scientists say")
+
+Or run the script:
+python app.py
+
+📁 Project Structure
+fake-news-detector/
+│
+├── app.py                # Main script to test news
+├── news_checker.py       # Contains the check_news() function
+├── model.pkl             # Serialized model (if included)
+├── vectorizer.pkl        # Serialized vectorizer (if included)
+├── dataset.csv           # Training data
+└── README.md             # This file
+
+💡 Future Improvements
+Add a Streamlit or Flask UI for web use
+Improve model accuracy with BERT or LSTM
+Use Hugging Face Transformers for enhanced NLP capabilities
+
+🧑‍💻 Author
+Rahul Gupta
+GitHub • https://github.com/rahuldsa 
+LinkedIn • https://www.linkedin.com/in/rahulgupta011/
+
+🛡️ License
+This project is licensed under the MIT License. Feel free to use, modify, and share!
